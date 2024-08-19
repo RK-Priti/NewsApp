@@ -14,6 +14,7 @@ button{
   background-color: red;
   color: white;
   height: 80px;
+  position: sticky;
 
 }
 
@@ -79,7 +80,7 @@ ul li a {
   .nav ul.open {
     display: block;
     width: 100%;
-    height: 50%;
+    height: 80%;
     background-color: white;
     position: fixed;
     top: 75px;
@@ -195,7 +196,7 @@ ul li a {
   .nav ul.open {
     display: block;
     width: 100%;
-    height: 60%;
+    height: 80%;
     background-color: white;
     position: fixed;
     top: 75px;
