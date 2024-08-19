@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+// import { Switch } from '@mui/material';
 import './App.css';
+import Main from './components/Main'
+import Entertainment from './components/Entertainment'
+import Health from './components/Health'
+import Science from './components/Science'
+import Sports from './components/Sports'
+import Technology from './components/Technology'
+import Navbar from './components/Navbar'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+      <Navbar />
+        <Routes>
+          <Route index element={<Main />} />
+          <Route path="entertainment" element={<Entertainment/>} />
+          <Route path="health" element={<Health/>} />
+          <Route path="science" element={<Science/>} />
+          <Route path="sports" element={<Sports/>} />
+          <Route path="technology" element={<Technology/>} />
+        </Routes>
+      </Router>
+
+    </>
   );
 }
 
