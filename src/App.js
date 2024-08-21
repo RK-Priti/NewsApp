@@ -1,4 +1,3 @@
-// import { Switch } from '@mui/material';
 import './App.css';
 import Main from './components/Main'
 import Entertainment from './components/Entertainment'
@@ -7,13 +6,13 @@ import Science from './components/Science'
 import Sports from './components/Sports'
 import Technology from './components/Technology'
 import Navbar from './components/Navbar'
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter , Routes, Route } from "react-router-dom";
 
 
 function App() {
   return (
     <>
-      <Router>
+      <HashRouter>
       <Navbar />
         <Routes>
           <Route index element={<Main />} />
@@ -23,7 +22,7 @@ function App() {
           <Route path="sports" element={<Sports/>} />
           <Route path="technology" element={<Technology/>} />
         </Routes>
-      </Router>
+      </HashRouter>
 
     </>
   );
