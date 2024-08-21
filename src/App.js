@@ -7,7 +7,7 @@ import Science from './components/Science'
 import Sports from './components/Sports'
 import Technology from './components/Technology'
 import Navbar from './components/Navbar'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 
 function App() {
